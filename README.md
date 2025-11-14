@@ -10,7 +10,7 @@ Build a company homepage for a real or imagined company using flexbox to design 
 
 ## Overview
 
-This website was created to practice HTML5 and CSS3 learned in Codecademy Full-Stack Engineer career path. The project is called "Codecademy Challenge Project: Company Home Page with Flexbox".
+This website was created to practice HTML5 and CSS3 learned in Codecademy Full-Stack Engineer career path. The project is called "Challenge Project: Company Home Page with Flexbox".
 
 ## Project Goals
 
