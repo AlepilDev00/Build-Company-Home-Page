@@ -20,13 +20,13 @@ The project as requested should at least include:
 - A list or set of images and titles representing the product or products of the company.
 - A section describing some of the company’s employees or teammates.
 
-# My version
+## My version
 
 Click here for my version!
 
 Feel free to comment and give me advice to correct my mistakes and continue to improve. Thanks a lot in advance.
 
-Sources
+## Sources
 - https://unsplash.com/
 - https://fonts.google.com/
 - https://developer.mozilla.org/en-US/
