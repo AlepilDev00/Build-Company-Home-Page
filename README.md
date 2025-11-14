@@ -22,7 +22,7 @@ The project as requested should at least include:
 
 ## My version
 
-[Click here for my version!](https://AlepilDev00.github.io/Build-Company-Home-Page/)
+[Click here for my version!](https://alepildev00.github.io/Build-Company-Home-Page/)
 
 Feel free to comment and give me advice to correct my mistakes and continue to improve. Thanks a lot in advance.
 
