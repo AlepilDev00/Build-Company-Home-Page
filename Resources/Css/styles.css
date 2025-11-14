@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "MyMedievalFont";
+  src: url("../Fonts/UncialAntiqua-Regular.woff2") format("woff2"),
+    url("../Fonts/UncialAntiqua-Regular.woff") format("woff"),
+    url("../Fonts/UncialAntiqua-Regular.ttf") format("truetype"),
+    url("../Fonts/UncialAntiqua-Regular.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "MyMedievalText";
+  src: url("../Fonts/Macondo-Regular.ttf") format("woff2"),
+    url("../Fonts/Macondo-Regular.woff") format("woff"),
+    url("../Fonts/Macondo-Regular.ttf") format("truetype"),
+    url("../Fonts/Macondo-Regular.svg#svgFontName") format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Header Styles (Logo and Company Name) */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 250px;
+  width: 100vw;
+  border-bottom: 4px solid darkgoldenrod;
+  z-index: 1000;
+}
+.name {
+  font-family: "MyMedievalFont", serif;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: goldenrod;
+  text-transform: uppercase;
+  word-spacing: 230px;
+  margin: 0;
+  padding-left: 20px;
+  text-shadow: 2px 2px 4px gold;
+}
+.logo-link {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  background-color: none;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* Navigation Bar Styles */
+.nav-bar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-bar li a {
+  font-family: "MyMedievalFont", serif;
+  font-size: 1rem;
+  color: goldenrod;
+  text-decoration: none;
+  padding: 4px 15px;
+  font-weight: bold;
+}
+.nav-bar li a:hover {
+  background-color: darkgoldenrod;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* Splash Image Styles and Brief Description */
+.splash-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-image: url("../Images/D20_dice_splash_image.jpg");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 4px solid darkgoldenrod;
+}
+
+.mission-statement {
+  width: 1000px;
+  max-width: 100%;
+  font-family: "MyMedievalFont", serif;
+  font-size: 4rem;
+  padding-top: 80vh;
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px 4px goldenrod;
+}
+
+/* About us Section Styles */
+#about {
+  scroll-margin-top: 220px;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 4px solid darkgoldenrod;
+  background-color: black;
+}
+.brief h2 p {
+  flex: 1;
+}
+.brief h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "MyMedievalFont", serif;
+  font-size: 4rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px white;
+}
+.brief p {
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 0 100px;
+}
+.blacksmith {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin: 0 10px 40px 10px;
+  object-fit: cover;
+  border: 4px solid darkgoldenrod;
+}
+/* Products Section Styles */
+#products {
+  scroll-margin-top: 220px;
+}
+.products-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 4px solid darkgoldenrod;
+  background-color: black;
+}
+.products-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: "MyMedievalFont", serif;
+  font-size: 3rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px white;
+}
+.products-title h2 {
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+}
+.steel {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+}
+.steel img {
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+}
+.steel h2 {
+  position: relative;
+  text-align: center;
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.steel h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+.resin {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+}
+.resin img {
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+}
+.resin h2 {
+  position: relative;
+  text-align: center;
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.resin h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+.wooden {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+}
+.wooden img {
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+}
+.wooden h2 {
+  position: relative;
+  text-align: center;
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.wooden h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+/* Team Section Styles */
+#team {
+  scroll-margin-top: 220px;
+}
+.team-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 4px solid darkgoldenrod;
+  background-color: black;
+}
+.team-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: "MyMedievalFont", serif;
+  font-size: 3rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px white;
+}
+.team-title h2 {
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+}
+.team-container p {
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0 100px 50px 100px;
+}
+/*Team Card 1*/
+.master {
+  width: 400px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.master h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.master:hover > .card-1 {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.card-front-1,
+.card-back-1 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card-front-1 img {
+  width: 100%;
+  height: 600px;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+}
+.card-back-1 {
+  background-color: dimgray;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.card-back-1 h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+.card-back-1 p {
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  line-height: 1.6;
+  text-align: center;
+}
+/*Team Card 2*/
+.artisan {
+  width: 400px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.artisan h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.artisan:hover > .card-2 {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.card-front-2,
+.card-back-2 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card-front-2 img {
+  width: 100%;
+  height: 600px;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+}
+.card-back-2 {
+  background-color: dimgray;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.card-back-2 h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+.card-back-2 p {
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  line-height: 1.6;
+  text-align: center;
+}
+/*Team Card 3*/
+.craftsman {
+  width: 400px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.craftsman h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.craftsman:hover > .card-3 {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.card-front-3,
+.card-back-3 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card-front-3 img {
+  width: 100%;
+  height: 600px;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+}
+.card-back-3 {
+  background-color: dimgray;
+  border: 4px solid goldenrod;
+  border-radius: 30px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.card-back-3 h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "MyMedievalText", serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  padding: 0;
+}
+.card-back-3 p {
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Section Styles */
+.contact-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid darkgoldenrod;
+  background-color: black;
+}
+
+.contact-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "MyMedievalFont", serif;
+  font-size: 4rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px white;
+}
+.contact-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "MyMedievalText", serif;
+  font-size: 2rem;
+  color: white;
+  line-height: 0.5;
+}
